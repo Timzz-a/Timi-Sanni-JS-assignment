@@ -14,18 +14,16 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 
-function sumOfNumbers(arrayOfNumbers) {
+function sumOfNumbers() {
   // 
   //declaring a variable for the array of numbers
-    var arrayOfNumbers = [68, -68, 27, 94, 72, -25, -51, 32, 10, 64, -94, 4, 34, 
-                          -86, 90, 81, 20, -56, -91, -50]
+  const Numbers = [68, -68, 27, 94, 72, -25, -51, 32, 10, 64, -94, 4, 34, -86, 90, 81, 20, -56, -91, -50]
   
   //adding the numbers of the array using reduce function
-  const result = arrayOfNumbers.reduce(function (x, y) {
+  const result = Numbers.reduce(function (x, y) {
     return x + y;
   }, 0);
   // // console.log(arrayOfNumbers)
-  console.log(result)
   return result
 }
 sumOfNumbers()
@@ -42,26 +40,25 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 
-function countEvenNumbers(arrayOfNumbers) {
+function countEvenNumbers() {
   
 
 //declaring variables for array of numbers and array of even numbers
-   var arrayOfNumbers = [17, 0, 67, 41, 49, 21, 1, 86, 76, 2, 54, 14, 93, 84, 
-                         14, 77, 35, 7, 29, 64]
+   const Numbers = [17, 0, 67, 41, 49, 21, 1, 86, 76, 2, 54, 14, 93, 84, 14, 77, 35, 7, 29, 64]
     var evenNumbers = [];
 
 //logging the array of numbers to the console for reading
-console.log(arrayOfNumbers)
+// console.log(arrayOfNumbers)
 
 //using the for.each function and modulus operation to filter even numbers and pushing into the evenNumbers variable
-arrayOfNumbers.forEach(number => {
+Numbers.forEach(number => {
   if (number % 2 === 0) {
     evenNumbers.push(number);
   }
 });
 // logging the array of even numbers back to the console for reading
   console.log(evenNumbers)
-  console.log(evenNumbers.length)
+  // console.log(evenNumbers.length)
       return evenNumbers.length;
 }
 countEvenNumbers()
