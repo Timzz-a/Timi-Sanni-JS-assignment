@@ -28,8 +28,8 @@ function sumOfNumbers(arrayOfNumbers) {
   console.log(result)
   return result
 }
+sumOfNumbers()
 assignment.sumOfNumbers = sumOfNumbers;
-
 
 
 /**
@@ -64,6 +64,7 @@ arrayOfNumbers.forEach(number => {
   console.log(evenNumbers.length)
       return evenNumbers.length;
 }
+countEvenNumbers()
 assignment.countEvenNumbers = countEvenNumbers;
 
 
