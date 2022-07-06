@@ -14,19 +14,38 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 
-function sumOfNumbers() {
-  // 
-  //declaring a variable for the array of numbers
-  const Numbers = [68, -68, 27, 94, 72, -25, -51, 32, 10, 64, -94, 4, 34, -86, 90, 81, 20, -56, -91, -50]
-  
-  //adding the numbers of the array using reduce function
-  const result = Numbers.reduce(function (x, y) {
-    return x + y;
-  }, 0);
-  // // console.log(arrayOfNumbers)
-  return result
+function sumOfNumbers(arrayOfNumbers) {
+ 
+  arrayOfNumbers = [68,
+        -68,
+        27,
+        94,
+        72,
+        -25,
+        -51,
+        32,
+        10,
+        64,
+        -94,
+        4,
+        34,
+        -86,
+        90,
+        81,
+        20,
+        -56,
+        -91,
+        -50]
+  console.log(arrayOfNumbers)
+  let sum = 0
+
+for (const value of arrayOfNumbers) {
+  sum += value;
 }
-sumOfNumbers()
+  // console.log(sum)
+  return sum
+}
+// sumOfNumbers()
 assignment.sumOfNumbers = sumOfNumbers;
 
 
@@ -40,29 +59,51 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 
-function countEvenNumbers() {
+
+function countEvenNumbers(arrayOfNumbers) {
+  evenNumbers =[]
+    //declaring an array container for even numbers
   
-
-//declaring variables for array of numbers and array of even numbers
-   const Numbers = [17, 0, 67, 41, 49, 21, 1, 86, 76, 2, 54, 14, 93, 84, 14, 77, 35, 7, 29, 64]
-    var evenNumbers = [];
-
-//logging the array of numbers to the console for reading
-// console.log(arrayOfNumbers)
-
-//using the for.each function and modulus operation to filter even numbers and pushing into the evenNumbers variable
-Numbers.forEach(number => {
-  if (number % 2 === 0) {
-    evenNumbers.push(number);
+  arrayOfNumbers = [17,
+        0,
+        67,
+        41,
+        49,
+        21,
+        1,
+        86,
+        76,
+        2,
+        54,
+        14,
+        93,
+        84,
+        14,
+        77,
+        35,
+        7,
+        29,
+        64]
+  // console.log(arrayOfNumbers)
+  
+  // using the for.each function and modulus operation to filter even numbers and pushing into the evenNumbers variable
+  
+  arrayOfNumbers.forEach(arrayOfNumbers => {
+    if (arrayOfNumbers % 2 === 0) {
+      evenNumbers.push(arrayOfNumbers);
+    }
+  });
+    
+  // logging the array of even numbers back to the console for reading
+    console.log(evenNumbers)
+    // return arrayOfNumbers.length;
+    // // console.log(evenNumbers.length)
+    return evenNumbers.length;
   }
-});
-// logging the array of even numbers back to the console for reading
-  console.log(evenNumbers)
-  // console.log(evenNumbers.length)
-      return evenNumbers.length;
-}
-countEvenNumbers()
-assignment.countEvenNumbers = countEvenNumbers;
+  
+  // countEvenNumbers()
+  assignment.countEvenNumbers = countEvenNumbers;
+  
 
 
 /**
@@ -79,9 +120,11 @@ assignment.countEvenNumbers = countEvenNumbers;
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
-}
+
+
+// function celsiusToFahrenheit(arrayOfNumbers) {
+//     return arrayOfNumbers;
+// }
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
