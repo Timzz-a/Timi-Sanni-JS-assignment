@@ -15,28 +15,7 @@ const assignment = {};
  */
 
 function sumOfNumbers(arrayOfNumbers) {
- 
-  arrayOfNumbers = [68,
-        -68,
-        27,
-        94,
-        72,
-        -25,
-        -51,
-        32,
-        10,
-        64,
-        -94,
-        4,
-        34,
-        -86,
-        90,
-        81,
-        20,
-        -56,
-        -91,
-        -50]
-  console.log(arrayOfNumbers)
+  
   let sum = 0
 
 for (const value of arrayOfNumbers) {
@@ -63,27 +42,6 @@ assignment.sumOfNumbers = sumOfNumbers;
 function countEvenNumbers(arrayOfNumbers) {
   evenNumbers =[]
     //declaring an array container for even numbers
-  
-  arrayOfNumbers = [17,
-        0,
-        67,
-        41,
-        49,
-        21,
-        1,
-        86,
-        76,
-        2,
-        54,
-        14,
-        93,
-        84,
-        14,
-        77,
-        35,
-        7,
-        29,
-        64]
   // console.log(arrayOfNumbers)
   
   // using the for.each function and modulus operation to filter even numbers and pushing into the evenNumbers variable
